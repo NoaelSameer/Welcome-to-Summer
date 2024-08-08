@@ -1,12 +1,12 @@
-body {
-  background-image: url("/photos/beach-5531919.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .Indie {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.Background {
+  background-image: url("/photos/beach-5531919.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=index.css.map */
