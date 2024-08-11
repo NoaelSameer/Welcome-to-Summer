@@ -5,7 +5,7 @@
 }
 
 .Background {
-  background-image: url("/photos/beach-5531919.jpg");
+  background-image: url("./photos/beach-5531919.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
