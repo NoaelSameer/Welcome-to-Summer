@@ -1,13 +1,161 @@
-
-.Indie{
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.Background{
+.Indie {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Background {
   background-image: url("/photos/beach-5531919.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
 }
+
+/* EventS */
+.Event {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.Event-category {
+  padding: 0 10vw;
+  font-size: 3vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+  text-transform: capitalize;
+}
+
+.Event-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.Event-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Event-card {
+  flex: 0 0 auto;
+  width: 25vw;
+  height: 75vh;
+  margin-right: 1vw;
+}
+
+.Event-image {
+  position: relative;
+  width: 25vw;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.Event-thumb {
+  width: 100vh;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.Event-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #E8C872;
+  color: black;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+
+.pre-btn, .nxt-btn {
+  width: 9vw;
+  height: 16vh;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+  transform: translateY(-50%);
+  background: gray;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 6vw;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pre-btn {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.pre-btn:hover, .nxt-btn:hover {
+  background: black;
+  opacity: 0.9;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=Events.css.map */
